@@ -141,7 +141,7 @@ export class ChessboardView {
         this.squareHeight = this.innerHeight / 8
         this.scalingX = this.squareWidth / piecesTileSize
         this.scalingY = this.squareHeight / piecesTileSize
-        this.pieceXTranslate = (this.squareWidth / 2 - piecesTileSize * this.scalingX / 2)
+        this.pieceXTranslate = (this.squareWidth / 2 - piecesTileSize * this.scalingY / 2)
     }
 
     handleResize() {
