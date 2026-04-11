@@ -180,6 +180,9 @@ export class Chessboard {
     }
 
     destroy() {
+        if (!this.state) {
+            return // already destroyed
+        }
         this.state.invokeExtensionPoints(EXTENSION_POINT.destroy)
         this.positionAnimationsQueue.destroy()
         this.view.destroy()
